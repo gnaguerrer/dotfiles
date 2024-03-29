@@ -1,0 +1,28 @@
+# React Native
+alias packages-native='yarn && cd ios && arch -x86_64 pod install && cd ..'
+alias rninfo='npx react-native info'
+alias rnclean='npx react-native clean'
+alias clearxcode='rm -rf ~/Library/Developer/Xcode/DerivedData/* && rm -rf ~/Library/Caches/org.swift.swiftpm'
+alias adb='/Users/$USER/Library/Android/sdk/platform-tools/adb'
+
+# Git 
+alias develop='git checkout develop'
+alias pdevelop='develop && git pull'
+alias bname='git branch --show-current'
+alias bncopy='bname | pbcopy'
+alias gpushn='git push --set-upstream origin'
+alias gcom='git commit -m'
+alias greset="git reset --hard"
+alias gpf="git push -f origin"
+alias gc="git checkout"
+
+
+alias javahv='/usr/libexec/java_home -V'
+alias clupid='~/Documents/scripts/clickup_formater.sh'
+alias o="open ."
+alias op="open "
+alias cleands="find . -name '*.DS_Store' -type f -ls -delete"
+alias nal="nano ~/.aliases"
+alias nzp="nano ~/.zprofile"
+alias nfc="nano ~/.functions"
+alias dl="cd ~/Downloads && ls"
