@@ -4,6 +4,7 @@ alias rninfo='npx react-native info'
 alias rnclean='npx react-native clean'
 alias clearxcode='rm -rf ~/Library/Developer/Xcode/DerivedData/* && rm -rf ~/Library/Caches/org.swift.swiftpm'
 alias adb='/Users/$USER/Library/Android/sdk/platform-tools/adb'
+alias xcdv="xcrun xctrace list devices"
 
 # Git 
 alias develop='git checkout develop'
@@ -14,7 +15,9 @@ alias gpushn='git push --set-upstream origin'
 alias gcom='git commit -m'
 alias greset="git reset --hard"
 alias gpf="git push -f origin"
-alias gc="git checkout"
+alias gco="git checkout"
+alias gpo="git pull origin"
+alias gp="git pull"
 
 
 alias javahv='/usr/libexec/java_home -V'
@@ -26,3 +29,6 @@ alias nal="nano ~/.aliases"
 alias nzp="nano ~/.zprofile"
 alias nfc="nano ~/.functions"
 alias dl="cd ~/Downloads && ls"
+alias cl="clear"
+alias cleandesk="rm -rf ~/Desktop/*"
+alias rmf="rm -rf"
