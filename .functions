@@ -19,5 +19,6 @@ gclone() {
 
 sz() {
     source ~/.zprofile
+    source ~/..zshrc
     echo "✨Done"
 }
