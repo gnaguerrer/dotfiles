@@ -21,7 +21,6 @@ alias gp="git pull"
 
 
 alias ..='cd ..'
-alias ...='cd ...'
 alias javahv='/usr/libexec/java_home -V'
 alias clupid='~/Documents/scripts/clickup_formater.sh'
 alias o="open ."
