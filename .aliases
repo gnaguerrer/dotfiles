@@ -4,7 +4,7 @@ alias rninfo='npx react-native info'
 alias rnclean='npx react-native clean'
 alias clearxcode='rm -rf ~/Library/Developer/Xcode/DerivedData/* && rm -rf ~/Library/Caches/org.swift.swiftpm'
 alias adb='/Users/$USER/Library/Android/sdk/platform-tools/adb'
-alias xcdv="xcrun xctrace list devices"
+alias xcdevices="xcrun xctrace list devices"
 
 # Git 
 alias develop='git checkout develop'
