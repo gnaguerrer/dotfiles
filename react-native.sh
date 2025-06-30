@@ -16,7 +16,6 @@ if ! grep -q "export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Con
 else
     echo "JAVA_HOME already configured in ~/.zshrc"
 fi
-
 echo "Java Zulu 17 installed ✅"
 
 echo "Sourcing ~/.zshrc..."
@@ -34,9 +33,16 @@ echo "Android Studio installed ✅"
 
 echo "Installing chruby ruby-install..."
 brew install chruby ruby-install
+if ! grep -q "source /opt/homebrew/opt/chruby/share/chruby/chruby.sh" ~/.zshrc; then
+    cat <<'EOF' >> ~/.zshrc
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 chruby ruby-3.4.2
+EOF
+    echo "Ruby configuration added to ~/.zshrc"
+else
+    echo "Ruby configuration already exists in ~/.zshrc"
+fi
 echo "Chruby ruby-install installed ✅"
 
 
